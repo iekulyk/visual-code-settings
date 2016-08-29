@@ -1,0 +1,128 @@
+// Place your settings in this file to overwrite the default settings
+{
+  "editor.tabSize": 2,
+  "editor.insertSpaces": true,
+  "javascript.validate.enable": false,
+  "jshint.enable": false,
+  "eslint.enable": true,
+   "search.exclude": {
+    "**/node_modules": true,
+    "**/bower_components": true
+  },
+  "eslint.options": {
+    "rules": {
+      //// possible errors (http://eslint.org/docs/rules/#possible-errors)
+      "comma-dangle": [
+        2,
+        "never"
+      ],
+      "no-cond-assign": [
+        2,
+        "except-parens"
+      ],
+      "no-dupe-keys": 2,
+      "no-trailing-spaces": 2,
+      /// best practices (http://eslint.org/docs/rules/#best-practices)
+      "block-scoped-var": 2,
+      "curly": [
+        2,
+        "all"
+      ],
+      "no-multi-spaces": [
+        2,
+        {
+          "exceptions": {
+            "VariableDeclarator": true,
+            "ArrayExpression": true
+          }
+        }
+      ],
+      "dot-location": [
+        2,
+        "property"
+      ],
+      "guard-for-in": 2,
+      "no-console": 1,
+      "no-else-return": 2,
+      "no-self-compare": 2,
+      "no-sequences": 2,
+      "no-throw-literal": 2,
+      "no-warning-comments": [
+        1,
+        {
+          "terms": [
+            "todo",
+            "fixme"
+          ]
+        }
+      ],
+      "radix": 2,
+      /// strict mode (http://eslint.org/docs/rules/#strict-mode)
+      "strict": 0,
+      /// variables (http://eslint.org/docs/rules/#variables)
+      "no-use-before-define": [
+        2,
+        "nofunc"
+      ],
+      /// node (http://eslint.org/docs/rules/#nodejs)
+      "handle-callback-err": 2,
+      "no-sync": 2,
+      /// stylistic issues (http://eslint.org/docs/rules/#stylistic-issues)
+      "brace-style": [
+        2,
+        "1tbs",
+        {
+          "allowSingleLine": true
+        }
+      ],
+      "comma-style": [
+        2,
+        "last"
+      ],
+      "indent": [
+        2,
+        2
+      ],     
+      "no-lonely-if": 2,
+      "object-curly-spacing": [
+        2,
+        "always"
+      ], // may be high-impact - consider changing
+      "quotes": [
+        0,
+        "single",
+        "avoid-escape"
+      ],
+      "semi": [
+        2,
+        "always"
+      ],      
+      "space-after-keywords": 2,
+      "space-before-blocks": 2,
+      "space-before-function-paren": [
+        2,
+        {
+          "anonymous": "always",
+          "named": "never"
+        }
+      ],
+      "no-bitwise": 2,
+      "yoda": 0
+    },
+    "env": {
+      "node": true
+    }
+  },
+  "jshint.options": {
+    "devel": true,
+    "node": true,
+    "indent": 2,
+    //"sloppy": true,
+    "nomen": true,
+    "plusplus": true,
+    //"minusminus": true,
+    "undef": true,
+    "maxerr": 100
+    //"vars": true
+  }
+}
